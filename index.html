@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Personal Portfolio</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+  <div id="header">
+
+    <div class="container">
+    
+      <nav id="sidemenu">
+        <a href="#" class="logo">Bishal.</a>
+        <ul id="menu-items">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class='bx bx-x' id="closeIcon" onclick="closemenu()"></i>
+        <i class='bx bx-menu' id="openIcon" onclick="openmenu()"></i>
+      </nav>
+      
+
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I'm <span>Bishal</span><br>Kandel From Finland</h1>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ------------about------------ -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+
+        <div class="about-col-1">
+          <img src="user.jpeg" alt="user image">
+        </div>
+
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Aspiring web developer with a strong foundation in front-end and back-end technologies, eager to enhance 
+            my skills and gain hands-on experience in real-world projects. Passionate about coding, problem-solving, and 
+            learning new technologies to create user-friendly and efficient web applications. Seeking an internship opportunity 
+            to contribute, grow, and expand my knowledge in web development.</p>
+
+             <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+             </div>
+
+             <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>DevOps</span><br>Learned the basic concept of server logic, databases, APIs</li>
+              </ul>
+             </div>
+
+             <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2024 - Current</span><br>UI/UX Design Training through online courses</li>
+                <li><span>2024 - Current</span><br>Web development projects done in a small & large teams</li>
+                <li><span>2024 - Current</span><br>Experience with GitHub for code hosting, pull requests, and team collaboration</li>
+                <li><span>2024 - Current</span><br>Experience deployiing React apps using AWS(S3 bucket, CloudFormation)</li>
+              </ul>
+             </div>
+
+             <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024 - Current</span><br>Tredu College of Tampere</li>
+                <li><span>2022 - 2024</span><br>Learned some online courses related to the web development</li>
+                <li><span>2018 - 2022</span><br>Bachelor in Environmental Engineering</li>
+              </ul>
+             </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- --------Services--------- -->
+   <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+
+      <div class="services-list">
+        <div>
+          <i class='bx bx-code'></i>
+          <h2>Web Design</h2>
+          <p>I create professional, user-friendly websites tailored to the needs of businesses.
+             Whether you're starting out or looking to upgrade your online presence,
+              I design responsive, easy-to-manage sites that help you attract customers and grow your brand. 
+              Your website will look great on all devices and reflect the unique personality of your business.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class='bx bxs-crop'></i>
+          <h2>UI/UX Design</h2>
+          <p>I design user-friendly and visually appealing interfaces that create smooth, engaging experiences for your users. 
+            From wireframes to final design, I focus on usability, clarity, and consistency—ensuring your app or website is easy 
+            to use and aligned with your brand. My goal is to make your product not just look good, but feel intuitive.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class='bx bxl-apple'></i>
+          <h2>App Design</h2>
+          <p>I design clean, intuitive, and user-friendly mobile app interfaces that provide a seamless experience on both iOS 
+            and Android. From concept to clickable prototypes, I focus on user-centered design to ensure your app is easy to use,
+             visually appealing, and aligned with your brand. Whether you're building a new app or improving an existing one, 
+             I help turn your ideas into engaging digital experiences.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+   </div>
+
+
+   <!-- --------Portfolio-------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      
+      <div class="work-list">
+        <div class="work">
+          <img src="work1.jpg" alt="coffee on table">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>The app connects you to the talented people around the world.
+              Download it from play store.</p>
+              <a href="#" title="View Social Media App"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work2.jpg" alt="laptop on table">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>The app connects you to the talented people around the world.
+              Download it from play store.</p>
+              <a href="#" title="View Music App"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work3.jpg" alt="typing on laptop">
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>The app connects you to the talented people around the world.
+              Download it from play store.</p>
+              <a href="https://bishal-kandel-ctrl.github.io/youtube-website/" title="View Online Shopping App"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+
+<!-- ----------Contact---------- -->
+ <div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class='bx bxs-send'></i>contact@example.com</p>
+        <p><i class='bx bxs-phone'></i>0123456789</p>
+        <div class="social-icons">
+          <a href="https://facebook.com/" aria-label="Visit my Facebook profile"><i class='bx bxl-facebook-circle'></i></a>
+          <a href="https://www.instagram.com/" aria-label="Visit my Instagram profile"><i class='bx bxl-instagram-alt'></i></a>
+          <a href="https://www.linkedin.com/" aria-label="Visit my LinkedIn profile"><i class='bx bxl-linkedin-square'></i></a>
+          <a href="https://x.com/" aria-label="Visit my X (formerly Twitter) profile"><i class='bx bxs-x-square'></i></a>
+        </div>
+        <a href="Academic CV.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright @ Bishal. Made with <i class='bx bxs-heart'></i> by Easy Tutorials</p>
+  </div>
+ </div>
+
+
+
+
+
+
+
+
+
+    
+  <script>
+
+    let tabLinks = document.getElementsByClassName("tab-links")
+    let tabContents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabName){
+      for(tabLink of tabLinks){
+        tabLink.classList.remove("active-link");
+      }
+      for(tabContent of tabContents){
+        tabContent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabName).classList.add("active-tab")
+    }
+  </script>
+
+  <script>
+    // let sidemenu = document.getElementById("sidemenu");
+
+    // function openmenu(){
+    //   sidemenu.style.right = "0";
+    // }
+
+    // function closemenu(){
+    //   sidemenu.style.right = "-200px";
+    // }
+    // let sidemenu = document.getElementById("sidemenu");
+    
+    // function openmenu() {
+    // sidemenu.querySelector("ul").style.right = "0";  // Show the menu
+    // }
+    
+    // function closemenu() {
+    // sidemenu.querySelector("ul").style.right = "-200px";  // Hide the menu
+    // }
+
+    let sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+  sidemenu.classList.add("open");
+}
+
+function closemenu() {
+  sidemenu.classList.remove("open");
+}
+  //   function openmenu() {
+  //   document.getElementById("sidemenu").style.width = "250px"; // Change width when menu opens
+  //   document.getElementById("closeIcon").style.display = "block"; // Show close icon
+  //   document.getElementById("openIcon").style.display = "none"; // Hide open icon
+  // }
+
+  // function closemenu() {
+  //   document.getElementById("sidemenu").style.width = "0"; // Reset width when menu closes
+  //   document.getElementById("closeIcon").style.display = "none"; // Hide close icon
+  //   document.getElementById("openIcon").style.display = "block"; // Show open icon
+  // }
+
+  </script>
+</body>
+</html>        
+
+
+
+
+  
